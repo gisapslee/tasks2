@@ -2,8 +2,8 @@ dataSource {
     pooled = true
     jmxExport = true
     driverClassName = "org.postgresql.Driver"
-    username = "postgres"
-    password = "root"    
+    username = "gqozrqawfflcxe"
+    password = "_QRyqJ8tLRUolG5DWNvQiLBEMc"    
 }
 
 hibernate {
@@ -35,7 +35,7 @@ environments {
             driverClassName = "org.postgresql.Driver"
             dialect = org.hibernate.dialect.PostgreSQLDialect
 
-            uri = new URI(System.env.DATABASE_URL?:"postgres://test:test@localhost/test")
+            uri = new URI(System.env.DATABASE_URL?:"postgres://gqozrqawfflcxe:_QRyqJ8tLRUolG5DWNvQiLBEMc@ec2-54-204-3-200.compute-1.amazonaws.com:5432/d6cpk7bjbdv92")
 
             url = "jdbc:postgresql://" + uri.host + ":" + uri.port + uri.path
             username = uri.userInfo.split(":")[0]
